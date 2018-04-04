@@ -12,7 +12,6 @@ def create_json(query, name, api_value, *args):
 				syn_dict.append(value)
 
 	counter = 0
-
 	for x in data:
 		_dict = []
 		for value in syn_dict:
@@ -21,7 +20,7 @@ def create_json(query, name, api_value, *args):
 		_ = {}
 		_["id"] = str(counter)
 		_["name"] = {"value":x[api_value],
-					 "synonyms":_dict}
+			     "synonyms":_dict}
 		slots_dict["values"].append(_)
 		counter += 1
 	answer = str(slots_dict).replace("'", "\"")
