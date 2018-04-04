@@ -1,6 +1,8 @@
 # alexa-json_generator
 An echo ready json generator for data fetched with APIs.
 
+Before you use it - it's important to mention that this tool **does not** generate the entire json file. It simply generates the section containing the single slot you choose to create. You need to carefully paste it in the correct section, either directly below or above your current slots. If you don't yet have any slots, I suggest adding one via the provided builder to see an example of where and how they should be located.
+
 ### What does it do?
 If you need to extract a ton of data into slot values using APIs or a ready JSON file (with very slight modifications to the code in the second case), you can just input whatever you need into the arguments on line 40 and you'll get a copy-paste ready file with indented lines. It's content can be immediately pasted into your echo-skill JSON file, in the correct place.
 
