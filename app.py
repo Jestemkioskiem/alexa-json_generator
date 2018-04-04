@@ -12,15 +12,20 @@ def create_json(query, name, api_value, *args):
 				syn_dict.append(value)
 
 	counter = 0
+
 	for x in data:
 		_dict = []
-		for value in syn_dict:
-			_dict.append(x[value])
+		try:
+			for value in syn_dict:
+				_dict.append(x[value])
 
-		_ = {}
-		_["id"] = str(counter)
-		_["name"] = {"value":x[api_value],
-			     "synonyms":_dict}
+			_ = {}
+			_["id"] = str(counter)
+			_["name"] = {"value":x[api_value],
+				     "synonyms":_dict}
+		except KeyError:
+			raise Exception("Incorrect API values")
+
 		slots_dict["values"].append(_)
 		counter += 1
 	answer = str(slots_dict).replace("'", "\"")
