@@ -23,3 +23,4 @@ Look, in the API of your choice, for the name of the value you're looking to inp
 This is used for Synonyms and is optional. Input them the same way you did with `api_value`, but in a list.
 
 Example for the abovage usage is accessible at line 38 in form of a comment.
+An Example output file is accessible as the "example.txt" in this repository.
