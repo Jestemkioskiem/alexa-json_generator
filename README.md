@@ -9,16 +9,16 @@ This script is absolutely necessary for projects that will have over 1000 lines 
 To run, simply replace the foo arguments on line 40 with correct values. This script supports simple slots with an id, name and a number of synonyms. Then run it like a normal python script.
 
 ### create_json() arguments explained:
-* query
+* `query` *string*
 
 Your HTTP request query goes there
-* name
+* `name` *string*
 
 The name of your slot goes there
-* api_value
+* `api_value` *string*
 
 Look, in the API of your choice, for the name of the value you're looking to input into the "value" slot of the JSON
-* *args
+* `*args` *dictionary of strings*
 
 This is used for Synonyms and is optional. Input them the same way you did with `api_value`, but in a list.
 
